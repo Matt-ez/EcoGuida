@@ -1,4 +1,4 @@
-from main import Window,QApplication,argv
+from src.main import Window,QApplication,argv
 
 app = QApplication(argv)
 win=Window()
