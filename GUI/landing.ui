@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>441</width>
-    <height>276</height>
+    <width>436</width>
+    <height>275</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,34 +16,60 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>180</x>
+     <x>170</x>
      <y>0</y>
-     <width>91</width>
-     <height>91</height>
+     <width>100</width>
+     <height>100</height>
     </rect>
    </property>
+   <property name="minimumSize">
+    <size>
+     <width>50</width>
+     <height>50</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
+   </property>
    <property name="text">
-    <string>logo</string>
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/Logo_EcoGuidaNoBG.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
      <x>30</x>
-     <y>90</y>
-     <width>381</width>
-     <height>61</height>
+     <y>100</y>
+     <width>401</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="text">
-    <string>Intro programma parco</string>
+    <string>Scopri la bellezza incontaminata dei parchi nazionali italiani con EcoGuida Italia, il tuo compagno di viaggio
+sostenibile.
+
+Esplora sentieri, conosci la flora e la fauna locali, e vivi esperienze autentiche nel rispetto dell’ambiente.
+Che tu sia un escursionista esperto o un amante della natura alle prime armi, qui troverai tutte le informazioni
+utili per pianificare le tue avventure nella natura italiana.</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>170</y>
+     <y>180</y>
      <width>121</width>
      <height>41</height>
     </rect>
@@ -65,8 +91,8 @@
   <widget class="QProgressBar" name="progressBar">
    <property name="geometry">
     <rect>
-     <x>17</x>
-     <y>230</y>
+     <x>20</x>
+     <y>240</y>
      <width>411</width>
      <height>21</height>
     </rect>
