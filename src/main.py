@@ -9,10 +9,8 @@ class Window(QWidget):
     def __init__(self):
         super().__init__()
         loadUi("GUI/main.ui",self)
-    
-    def apertura(self):
-        self.setWindowTitle("EcoGuida - Benvenuto!")
-        self.setWindowIcon(QIcon("GUI/Logo.png"))
+        self.setWindowTitle("EcoGuida 2025")
+        self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
 
 class Landing(QWidget):
@@ -20,8 +18,7 @@ class Landing(QWidget):
         super().__init__()
         loadUi("GUI/Landing.ui", self)
         self.setWindowTitle("EcoGuida - Benvenuto!")
-        self.setWindowIcon(QIcon("GUI/Logo.png"))
-        self.show()
+        self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.pushEntra.clicked.connect(self.openApp)
 
     def openApp(self):
@@ -33,7 +30,7 @@ class Landing(QWidget):
         time.sleep(0.25)
         self.progressBar.setValue(75)
         time.sleep(0.2)
-        Window.apertura(self)
+        self.win = Window()
         self.progressBar.setValue(100)
         time.sleep(0.5)
         self.close()
