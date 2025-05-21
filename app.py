@@ -1,6 +1,7 @@
-from src.main import Window,QApplication
+from src.main import Window,QApplication, Landing
 from sys import argv
 app = QApplication(argv)
 win=Window()
-win.show()
+landing = Landing()
+landing.show()
 app.exec()
