@@ -11,6 +11,9 @@ class Window(QWidget):
         self.setWindowTitle("EcoGuida 2025")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
+    def parcochanger(self):
+        if self.comboParchi:
+            pass
 
 class Landing(QWidget):
     def __init__(self):
