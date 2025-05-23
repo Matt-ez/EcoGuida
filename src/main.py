@@ -15,7 +15,7 @@ class Window(QWidget):
 class Landing(QWidget):
     def __init__(self):
         super().__init__()
-        loadUi("GUI/Landing.ui", self)
+        loadUi("GUI/landing.ui", self)
         self.setWindowTitle("EcoGuida - Benvenuto!")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.pushEntra.clicked.connect(self.openApp)
