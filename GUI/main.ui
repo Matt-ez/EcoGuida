@@ -20,17 +20,17 @@
       <widget class="QComboBox" name="comboParchi">
        <item>
         <property name="text">
-         <string>Parco1</string>
+         <string>Parco Nazionale del Gran Paradiso</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Parco2</string>
+         <string>Parco Nazionale del Cilento, Vallo di Diano e Alburni</string>
         </property>
        </item>
        <item>
         <property name="text">
-         <string>Parco3</string>
+         <string>Parco Nazionale delle Cinque Terre</string>
         </property>
        </item>
       </widget>
@@ -111,6 +111,13 @@
         <widget class="QScrollBar" name="verticalScrollBar_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>TextLabel</string>
          </property>
         </widget>
        </item>
