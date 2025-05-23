@@ -14,6 +14,8 @@ class Window(QWidget):
     def parcochanger(self):
         if self.comboParchi:
             pass
+    def granparadiso():
+        pass
 
 class Landing(QWidget):
     def __init__(self):
