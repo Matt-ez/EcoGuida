@@ -4,7 +4,6 @@ from PyQt6.uic import *
 import time
 
 
-
 class Window(QWidget):
     def __init__(self):
         super().__init__()
@@ -34,4 +33,3 @@ class Landing(QWidget):
         self.progressBar.setValue(100)
         time.sleep(0.5)
         self.close()
-
