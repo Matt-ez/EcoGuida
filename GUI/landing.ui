@@ -87,7 +87,7 @@ utili per pianificare le tue avventure nella natura italiana.</string>
     <set>Qt::AlignCenter</set>
    </property>
    <property name="wordWrap">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushEntra">
