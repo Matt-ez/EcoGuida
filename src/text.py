@@ -41,6 +41,55 @@ Uscire dai sentieri segnalati o accedere con veicoli non autorizzati;
 Lasciare rifiuti o usare saponi nei ruscelli.
 I cani, anche al guinzaglio, non sono ammessi su tutti i sentieri, per evitare disturbo alla fauna.
 """
+# Cilento (2)
+floraCilento="""
+🌳 Flora
+Grazie alla sua estensione e varietà altimetrica, il parco ospita uno degli ecosistemi vegetali più complessi d’Europa.
+La fascia costiera è dominata dalla macchia mediterranea con ginepro fenicio, lentisco, rosmarino selvatico, capperi e fico d’india.
+Tra le colline si sviluppano vasti uliveti, agrumeti, e querceti misti.
+Salendo verso i monti Alburni e Cervati, si trovano faggete secolari, castagneti da frutto, abeti bianchi e ontani neri.
+Particolarmente degne di nota sono le oltre 90 specie di orchidee spontanee, alcune esclusive del territorio."""
+
+faunaCilento="""
+🦊 Fauna
+Nel parco vivono oltre 200 specie di vertebrati.
+Il protagonista è il lupo appenninico, predatore simbolo dell’equilibrio ecologico. 
+Altri mammiferi presenti includono cinghiali, cervi, caprioli, donnole, istrici, lontre e gatti selvatici.
+Importante è la presenza di anfibi e rettili, tra cui la salamandra pezzata, bisce d’acqua e gechi.
+Per quanto riguarda l’avifauna, sono presenti poiane, allocchi, barbagianni, aironi e falchi pellegrini, oltre a passeriformi rari.
+Lungo la costa e nei fiumi si possono avvistare gruccioni, garzette, e cormorani."""
+
+activityCilento="""
+🚶 Attività
+Il parco offre un mix perfetto tra natura, cultura e sport:
+
+Sentieri e trekking immersi nella natura (tra cui il Sentiero degli Dei);
+
+Grotte carsiche visitabili come quelle di Pertosa-Auletta (con percorso in barca);
+
+Visite ai siti archeologici di Paestum e Velia;
+
+Attività outdoor come arrampicata, speleologia, canoa e cicloturismo;
+
+Tour enogastronomici tra prodotti locali e cucina mediterranea;
+
+Proposte per scuole e famiglie con laboratori didattici e percorsi guidati."""
+
+regoleCilento="""
+⚠️ Regole
+Per visitare il parco in modo sostenibile:
+
+Segui i sentieri tracciati ed evita di attraversare coltivazioni private o pascoli;
+
+Non raccogliere piante, funghi o animali, nemmeno per curiosità;
+
+Non introdurre specie aliene, neppure semi o animali domestici vaganti;
+
+Non accendere fuochi o barbecue, tranne in aree attrezzate;
+
+Rispettare i silenzi e non utilizzare droni senza permessi.
+In molte aree naturalistiche l’accesso è consentito solo con guida ambientale autorizzata."""
+
 
 # Cinque Terre (3)
 floraCinqueTerre = """
