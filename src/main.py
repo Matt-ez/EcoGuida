@@ -21,6 +21,9 @@ class Window(QWidget):
             self.granParadiso()
     def granParadiso(self):
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraGranParadiso))
+        self.pushFauna.clicked.connect(lambda: self.label.setText(faunaGranParadiso))
+        self.pushActivity.clicked.connect(lambda: self.label.setText(activityGranParadiso))
+        self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranParadiso))
 
 class Landing(QWidget):
     def __init__(self):
