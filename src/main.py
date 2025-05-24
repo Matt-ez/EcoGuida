@@ -11,7 +11,6 @@ class Window(QWidget):
         loadUi("GUI/main.ui",self)
         self.setWindowTitle("EcoGuida 2025")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
-        self.scrollArea.setWidgetResizable(True)
         self.show()
         self.deSelect()
         self.selected = False
