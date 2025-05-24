@@ -2,6 +2,7 @@ from PyQt6.QtWidgets import *
 from PyQt6.QtGui import QPixmap,QIcon
 from PyQt6.uic import *
 import time
+from src.text import *
 
 
 class Window(QWidget):
@@ -11,12 +12,15 @@ class Window(QWidget):
         self.setWindowTitle("EcoGuida 2025")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
+        self.pushSelect.clicked.connect(self.parcoChanger)
+        self.comboParchi.currentTextChanged.connect(lambda: self.comboParchi.setStyleSheet("QComboBox { background-color: #ffffff}"))
         
     def parcoChanger(self):
+        self.comboParchi.setStyleSheet("QComboBox { background-color: #bbf78f}")
         if self.comboParchi.currentText()=="Parco Nazionale del Gran Paradiso":
             self.granParadiso()
-    def granParadiso():
-        pass
+    def granParadiso(self):
+        self.pushFlora.clicked.connect(lambda: self.label.setText(floraGranParadiso))
 
 class Landing(QWidget):
     def __init__(self):
