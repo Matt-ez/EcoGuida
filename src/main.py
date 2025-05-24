@@ -11,9 +11,10 @@ class Window(QWidget):
         self.setWindowTitle("EcoGuida 2025")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
+        
     def parcoChanger(self):
-        if self.comboParchi:
-            pass
+        if self.comboParchi.currentText()=="Parco Nazionale del Gran Paradiso":
+            self.granParadiso()
     def granParadiso():
         pass
 
