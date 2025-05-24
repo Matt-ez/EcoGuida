@@ -19,11 +19,20 @@ class Window(QWidget):
         self.comboParchi.setStyleSheet("QComboBox { background-color: #bbf78f}")
         if self.comboParchi.currentText()=="Parco Nazionale del Gran Paradiso":
             self.granParadiso()
+        elif self.comboParchi.currentText()=="Parco Nazionale del Cilento, Vallo di Diano e Alburni":
+            self.parcoCilento()
+        elif self.comboParchi.currentText()=="Parco Nazionale delle Cinque Terre":
+            self.parcoCinqueTerre()
+
     def granParadiso(self):
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraGranParadiso))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaGranParadiso))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityGranParadiso))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranParadiso))
+    def parcoCilento(self):
+        pass
+    def parcoCinqueTerre(self):
+        pass
 
 class Landing(QWidget):
     def __init__(self):
