@@ -41,3 +41,46 @@ Uscire dai sentieri segnalati o accedere con veicoli non autorizzati;
 Lasciare rifiuti o usare saponi nei ruscelli.
 I cani, anche al guinzaglio, non sono ammessi su tutti i sentieri, per evitare disturbo alla fauna.
 """
+
+# Cinque Terre (3)
+floraCinqueTerre = """
+🌱 Flora
+Il paesaggio vegetale è fortemente modellato dall’attività agricola umana millenaria. Le celebri colline terrazzate, sorrette da muretti a secco, ospitano vigneti di vitigni autoctoni come il Bosco e il Vermentino, accanto a uliveti secolari.
+Tra la vegetazione spontanea, abbondano rosmarino selvatico, timo, erica arborea, mirto, ginestra, lentisco e capperi. Nelle zone più ombreggiate crescono felci, muschi e funghi. Sulle scogliere vive una flora pioniera che resiste a vento e salsedine.
+"""
+faunaCinqueTerre = """
+🐦 Fauna
+Nonostante le dimensioni contenute, il parco ospita una fauna varia. Tra i mammiferi: tassi, volpi, ghiri e ricci.
+La zona è però famosa per la ricca avifauna: si possono osservare uccelli marini come il gabbiano reale mediterraneo, marangoni dal ciuffo, corvi imperiali, e specie migratorie che sostano durante i loro lunghi viaggi.
+Nel mare dell’area protetta nuotano cernie, saraghi, donzelle, polpi, ricci di mare, stelle marine e, occasionalmente, delfini.
+"""
+activityCinqueTerre = """
+🥾 Attività
+Il Parco delle Cinque Terre è una meta turistica internazionale, ideale per chi ama:
+
+Trekking panoramico (Via dell’Amore, Sentiero Azzurro, Alta Via);
+
+Visite ai borghi di Riomaggiore, Manarola, Corniglia, Vernazza e Monterosso;
+
+Snorkeling ed escursioni in kayak o barca nelle calette e grotte marine;
+
+Degustazioni enogastronomiche tra cantine e frantoi locali;
+
+Turismo culturale con eventi, musei, e percorsi letterari.
+Sono presenti treni e traghetti dedicati per facilitare gli spostamenti.
+"""
+regoleCinqueTerre = """
+📏 Regole
+Obbligatorio l’uso di calzature da trekking su molti sentieri;
+
+Alcuni percorsi richiedono il Cinque Terre Card, acquistabile online o in loco;
+
+Divieto assoluto di accendere fuochi, fumare nei boschi o lasciare rifiuti;
+
+Raccolta di fiori, frutti o pietre vietata;
+
+Divieto di campeggiare o pernottare fuori dai luoghi autorizzati;
+
+Balneazione regolata nelle zone marine protette.
+È richiesto il massimo rispetto per i residenti e per la natura fragile del territorio.
+"""

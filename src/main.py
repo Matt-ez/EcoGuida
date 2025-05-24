@@ -30,9 +30,12 @@ class Window(QWidget):
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityGranParadiso))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranParadiso))
     def parcoCilento(self):
-        pass
+        
     def parcoCinqueTerre(self):
-        pass
+        self.pushFlora.clicked.connect(lambda: self.label.setText(floraCinqueTerre))
+        self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCinqueTerre))
+        self.pushActivity.clicked.connect(lambda: self.label.setText(activityCinqueTerre))
+        self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranCinqueTerre))
 
 class Landing(QWidget):
     def __init__(self):
