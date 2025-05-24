@@ -1,16 +1,24 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import QPixmap,QIcon
 from PyQt6.uic import *
-import time
 from src.text import *
+import time
+import sys
+import os
+
+def resource_path(relative_path):
+    """Ottiene il percorso del file anche in modalità PyInstaller."""
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 
 class Window(QWidget):
     def __init__(self):
         super().__init__()
-        loadUi("GUI/main.ui",self)
+        loadUi(resource_path("GUI/main.ui"), self)
         self.setWindowTitle("EcoGuida 2025")
-        self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
+        self.setWindowIcon(QIcon(resource_path("images/Logo_EcoGuida.png")))
         self.show()
         self.deSelect()
         self.selected = False
@@ -78,9 +86,9 @@ class Window(QWidget):
 class Landing(QWidget):
     def __init__(self):
         super().__init__()
-        loadUi("GUI/landing.ui", self)
+        loadUi(resource_path("GUI/landing.ui"), self)
         self.setWindowTitle("EcoGuida - Benvenuto!")
-        self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
+        self.setWindowIcon(QIcon(resource_path("images/Logo_EcoGuida.png")))
         self.pushEntra.clicked.connect(self.openApp)
 
     def openApp(self):
