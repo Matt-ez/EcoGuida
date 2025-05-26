@@ -12,12 +12,14 @@ class Window(QWidget):
         self.setWindowTitle("EcoGuida 2025")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
+        self.pushcnt=0
         self.deSelect()
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect)
     
     def deSelect(self):
+        self.pushcnt=0
         self.selected = False
         self.label.setText("")
         self.pushFlora.clicked.connect(self.alert)
@@ -36,6 +38,13 @@ class Window(QWidget):
 
 
     def parcoChanger(self):
+        self.pushcnt+=1
+        if self.pushcnt>1:
+            alrt=QMessageBox()
+            alrt.setText("Basta premere ricchione")
+            alrt.setWindowTitle(">:(")
+            alrt.exec()
+            return
         self.selected = True
         self.comboParchi.setStyleSheet("QComboBox { background-color: #bbf78f}")
         if self.comboParchi.currentText()=="Parco Nazionale del Gran Paradiso" and self.selected==True:
