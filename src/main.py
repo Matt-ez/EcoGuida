@@ -13,8 +13,6 @@ class Window(QWidget):
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
         self.pushcnt=0
-        self.combocnt=0
-        self.deSelect()
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect)
