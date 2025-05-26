@@ -13,10 +13,15 @@ class Window(QWidget):
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.show()
         self.pushcnt=0
+        self.combocnt=0
         self.deSelect()
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
-        self.comboParchi.currentTextChanged.connect(self.deSelect)
+        if self.combocnt==0:
+            self.comboParchi.currentTextChanged.connect(self.deSelect)
+            self.combocnt=1
+            return
+
     
     def deSelect(self):
         self.pushcnt=0
@@ -38,6 +43,7 @@ class Window(QWidget):
 
 
     def parcoChanger(self):
+        self.combocnt=0
         self.pushcnt+=1
         if self.pushcnt>1:
             alrt=QMessageBox()
