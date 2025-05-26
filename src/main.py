@@ -17,16 +17,16 @@ class Window(QWidget):
         self.deSelect()
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
-        if self.combocnt==0:
-            self.comboParchi.currentTextChanged.connect(self.deSelect)
-            self.combocnt=1
-            return
+        self.comboParchi.currentTextChanged.connect(self.deSelect)
+            
+            
 
     
     def deSelect(self):
         self.pushcnt=0
         self.selected = False
         self.label.setText("")
+        self.deselecter()
         self.pushFlora.clicked.connect(self.alert)
         self.pushFauna.clicked.connect(self.alert)
         self.pushActivity.clicked.connect(self.alert)
@@ -43,7 +43,6 @@ class Window(QWidget):
 
 
     def parcoChanger(self):
-        self.combocnt=0
         self.pushcnt+=1
         if self.pushcnt>1:
             alrt=QMessageBox()
@@ -63,32 +62,29 @@ class Window(QWidget):
             self.alert()
 
     def granParadiso(self):
-        self.pushFlora.clicked.disconnect()
-        self.pushFauna.clicked.disconnect()
-        self.pushActivity.clicked.disconnect()
-        self.pushRegole.clicked.disconnect()
+        self.deselecter()
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraGranParadiso))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaGranParadiso))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityGranParadiso))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranParadiso))
     def parcoCilento(self):
-        self.pushFlora.clicked.disconnect()
-        self.pushFauna.clicked.disconnect()
-        self.pushActivity.clicked.disconnect()
-        self.pushRegole.clicked.disconnect()
+        self.deselecter()
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraCilento))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCilento))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCilento))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCilento))
     def parcoCinqueTerre(self):
-        self.pushFlora.clicked.disconnect()
-        self.pushFauna.clicked.disconnect()
-        self.pushActivity.clicked.disconnect()
-        self.pushRegole.clicked.disconnect()
+        self.deselecter()
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraCinqueTerre))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCinqueTerre))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCinqueTerre))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCinqueTerre))
+    def deselecter(self):
+        for btn in [self.pushFlora,self.pushFauna,self.pushActivity,self.pushRegole]:
+            try: 
+                btn.clicked.disconnect()
+            except TypeError:
+                pass
 
 class Landing(QWidget):
     def __init__(self):
