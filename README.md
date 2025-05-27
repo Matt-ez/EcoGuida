@@ -6,17 +6,17 @@ Un’applicazione desktop scritta in **Python** con **PyQt6**, che ti permette d
 
 ## 🏗️ Architettura del progetto
 
-EcoGuida2025/
-├── src/
-│ └── text.py # Contiene i testi dei parchi (flora, fauna, ecc.)
-├── GUI/
-│ ├── main.ui # Layout UI della finestra principale (Qt Designer)
-│ └── landing.ui # Layout UI della landing page (Qt Designer)
-├── images/
-│ └── Logo_EcoGuida.png # Icona del programma
-├── main.py # Codice principale dell'applicazione
-├── README.md # Documentazione del progetto
-└── requirements.txt # Librerie necessarie
+EcoGuida2025/\n
+├── src/\n
+│ └── text.py # Contiene i testi dei parchi (flora, fauna, ecc.)\n
+├── GUI/\n
+│ ├── main.ui # Layout UI della finestra principale (Qt Designer)\n
+│ └── landing.ui # Layout UI della landing page (Qt Designer)\n
+├── images/\n
+│ └── Logo_EcoGuida.png # Icona del programma\n
+├── main.py # Codice principale dell'applicazione\n
+├── README.md # Documentazione del progetto\n
+└── requirements.txt # Librerie necessarie\n
 
 ---
 
