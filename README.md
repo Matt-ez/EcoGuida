@@ -19,8 +19,7 @@ EcoGuida2025/
 │   └── Logo_EcoGuida.png     # Icona del programma
 |   └── Logo_EcoGuidaNoBG     # Icona del programma (senza sfondo)
 ├── README.md                 # Documentazione del progetto
-├── app.py                    # Codice con QApplication da cui parte il programma
-└── requirements.txt          # Librerie necessarie
+└── app.py                    # Codice con QApplication da cui parte il programma
 ```
 >**L'applicazione parte dal file app.py** per eseguirla va quindi mandato in esecuzione quel file con i **file necessari nella stessa path**
 
