@@ -87,8 +87,10 @@ class Landing(QWidget):
         self.setWindowTitle("EcoGuida - Benvenuto!")
         self.setWindowIcon(QIcon("images/Logo_EcoGuida.png"))
         self.pushEntra.clicked.connect(self.openApp)
+        self.progressBar.hide()
 
     def openApp(self):
+        self.progressBar.show()
         self.progressBar.setValue(0)
         time.sleep(0.5)
         self.progressBar.setValue(25)
