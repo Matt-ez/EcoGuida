@@ -16,6 +16,7 @@ class Window(QWidget):
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect)
+
     
     def deSelect(self):
         self.pushcnt=0
