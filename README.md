@@ -56,8 +56,7 @@ Contiene le variabili:
 - `floraCinqueTerre`, `faunaCinqueTerre`, `activityCinqueTerre`, `regoleCinqueTerre`
 
 ---
-## Creato da:
-> Riccardo Dal Zotto e Matteo Bonaccini
 
 # 🌿 Esplora i parchi e rispetta la natura!
+>> Riccardo Dal Zotto e Matteo Bonaccini
 
