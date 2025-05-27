@@ -14,6 +14,10 @@ def resource_path(relative_path):
     except Exception:
         base_path = os.path.abspath(".")
     return os.path.join(base_path, relative_path)
+# loadUi(resource_path("GUI/main.ui"), self)
+# self.setWindowIcon(QIcon(resource_path("images/Logo_EcoGuida.ico")))
+# loadUi(resource_path("GUI/landing.ui"), self)
+# self.setWindowIcon(QIcon(resource_path("images/Logo_EcoGuida.ico")))
 
 class Window(QWidget):
     def __init__(self):
@@ -22,14 +26,16 @@ class Window(QWidget):
         self.setWindowTitle("EcoGuida 2025")
         self.setWindowIcon(QIcon(resource_path("images/Logo_EcoGuida.ico")))
         self.show()
-        self.deSelect()
+        self.pushcnt=0
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect)
     
     def deSelect(self):
+        self.pushcnt=0
         self.selected = False
         self.label.setText("")
+        self.deselecter()
         self.pushFlora.clicked.connect(self.alert)
         self.pushFauna.clicked.connect(self.alert)
         self.pushActivity.clicked.connect(self.alert)
@@ -44,8 +50,14 @@ class Window(QWidget):
         msg.setIcon(QMessageBox.Icon.Critical)
         msg.exec()
 
-
     def parcoChanger(self):
+        self.pushcnt+=1
+        if self.pushcnt>1:
+            alrt=QMessageBox()
+            alrt.setText("Basta premere ricchione")
+            alrt.setWindowTitle(">:(")
+            alrt.exec()
+            return
         self.selected = True
         self.comboParchi.setStyleSheet("QComboBox { background-color: #bbf78f}")
         if self.comboParchi.currentText()=="Parco Nazionale del Gran Paradiso" and self.selected==True:
@@ -58,32 +70,29 @@ class Window(QWidget):
             self.alert()
 
     def granParadiso(self):
-        self.pushFlora.clicked.disconnect(self.alert)
-        self.pushFauna.clicked.disconnect(self.alert)
-        self.pushActivity.clicked.disconnect(self.alert)
-        self.pushRegole.clicked.disconnect(self.alert)
+        self.deselecter()
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraGranParadiso))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaGranParadiso))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityGranParadiso))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranParadiso))
     def parcoCilento(self):
-        self.pushFlora.clicked.disconnect(self.alert)
-        self.pushFauna.clicked.disconnect(self.alert)
-        self.pushActivity.clicked.disconnect(self.alert)
-        self.pushRegole.clicked.disconnect(self.alert)
+        self.deselecter()
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraCilento))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCilento))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCilento))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCilento))
     def parcoCinqueTerre(self):
-        self.pushFlora.clicked.disconnect(self.alert)
-        self.pushFauna.clicked.disconnect(self.alert)
-        self.pushActivity.clicked.disconnect(self.alert)
-        self.pushRegole.clicked.disconnect(self.alert)
+        self.deselecter()
         self.pushFlora.clicked.connect(lambda: self.label.setText(floraCinqueTerre))
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCinqueTerre))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCinqueTerre))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCinqueTerre))
+    def deselecter(self):
+        for btn in [self.pushFlora,self.pushFauna,self.pushActivity,self.pushRegole]:
+            try: 
+                btn.clicked.disconnect()
+            except TypeError:
+                pass
 
 class Landing(QWidget):
     def __init__(self):
