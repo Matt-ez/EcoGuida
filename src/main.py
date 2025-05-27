@@ -16,9 +16,6 @@ class Window(QWidget):
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect)
-            
-            
-
     
     def deSelect(self):
         self.pushcnt=0
@@ -38,7 +35,6 @@ class Window(QWidget):
         msg.setText("Il parco non è stato selezionato!")
         msg.setIcon(QMessageBox.Icon.Critical)
         msg.exec()
-
 
     def parcoChanger(self):
         self.pushcnt+=1
