@@ -1,3 +1,7 @@
+# File dei testi dei parchi con tutte le informazioni necessarie per la GUI.
+# È stato fatto un file a parte per non "incasinare" il main e per rendere il codice più leggibile
+
+
 # Gran Paradiso (1)
 floraGranParadiso = """
 🌿 Flora
@@ -48,7 +52,8 @@ Grazie alla sua estensione e varietà altimetrica, il parco ospita uno degli eco
 La fascia costiera è dominata dalla macchia mediterranea con ginepro fenicio, lentisco, rosmarino selvatico, capperi e fico d’india.
 Tra le colline si sviluppano vasti uliveti, agrumeti, e querceti misti.
 Salendo verso i monti Alburni e Cervati, si trovano faggete secolari, castagneti da frutto, abeti bianchi e ontani neri.
-Particolarmente degne di nota sono le oltre 90 specie di orchidee spontanee, alcune esclusive del territorio."""
+Particolarmente degne di nota sono le oltre 90 specie di orchidee spontanee, alcune esclusive del territorio.
+"""
 
 faunaCilento="""
 🦊 Fauna
@@ -57,7 +62,8 @@ Il protagonista è il lupo appenninico, predatore simbolo dell’equilibrio ecol
 Altri mammiferi presenti includono cinghiali, cervi, caprioli, donnole, istrici, lontre e gatti selvatici.
 Importante è la presenza di anfibi e rettili, tra cui la salamandra pezzata, bisce d’acqua e gechi.
 Per quanto riguarda l’avifauna, sono presenti poiane, allocchi, barbagianni, aironi e falchi pellegrini, oltre a passeriformi rari.
-Lungo la costa e nei fiumi si possono avvistare gruccioni, garzette, e cormorani."""
+Lungo la costa e nei fiumi si possono avvistare gruccioni, garzette, e cormorani.
+"""
 
 activityCilento="""
 🚶 Attività
@@ -73,7 +79,8 @@ Attività outdoor come arrampicata, speleologia, canoa e cicloturismo;
 
 Tour enogastronomici tra prodotti locali e cucina mediterranea;
 
-Proposte per scuole e famiglie con laboratori didattici e percorsi guidati."""
+Proposte per scuole e famiglie con laboratori didattici e percorsi guidati.
+"""
 
 regoleCilento="""
 ⚠️ Regole
@@ -88,7 +95,8 @@ Non introdurre specie aliene, neppure semi o animali domestici vaganti;
 Non accendere fuochi o barbecue, tranne in aree attrezzate;
 
 Rispettare i silenzi e non utilizzare droni senza permessi.
-In molte aree naturalistiche l’accesso è consentito solo con guida ambientale autorizzata."""
+In molte aree naturalistiche l’accesso è consentito solo con guida ambientale autorizzata.
+"""
 
 
 # Cinque Terre (3)
