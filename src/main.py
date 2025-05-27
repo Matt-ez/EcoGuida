@@ -51,11 +51,29 @@ class Window(QWidget): # Classe della finestra principale
         """ Metodo per cambiare il parco selezionato, collega i bottoni al parco corrispettivo """
         self.pushcnt+=1
         if self.pushcnt>1:
-            alrt=QMessageBox()
-            alrt.setText("Basta premere ricchione")
-            alrt.setWindowTitle(">:(")
-            alrt.exec()
-            return
+            match self.pushcnt:
+                case 2:
+                    alrt=QMessageBox()
+                    alrt.setText("Hai già selezionato il parco")
+                    alrt.setWindowTitle(">:(")
+                    alrt.setIcon(QMessageBox.Icon.Warning)
+                    alrt.exec()
+                    return
+                case 3:
+                    alrt=QMessageBox()
+                    alrt.setText("L'hai già premuto")
+                    alrt.setIcon(QMessageBox.Icon.Warning)
+                    alrt.setWindowTitle(">:(")
+                    alrt.exec()
+                    return
+                case _:
+                    alrt=QMessageBox()
+                    alrt.setText("Mi arrendo")
+                    alrt.setIcon(QMessageBox.Icon.Warning)
+                    alrt.setWindowTitle(":/")
+                    alrt.exec()
+                    return
+
         self.selected = True
         self.comboParchi.setStyleSheet("QComboBox { background-color: #bbf78f}")
         """ Chiama le funzioni specifche di ogni parco """
