@@ -1,6 +1,7 @@
 # 🌿 EcoGuida 2025
 
 Un’applicazione desktop scritta in **Python** con **PyQt6**, che ti permette di esplorare informazioni sui principali **parchi nazionali italiani**: flora, fauna, attività e regole. Include una schermata iniziale con caricamento e una GUI interattiva.
+> **Parchi disponibili**: Parco Nazionale del Gran Paradiso, Parco Nazionale del Cilento, Vallo di Diano e Alburni, Parco Nazionale delle Cinque Terre
 
 ---
 
