@@ -16,6 +16,7 @@ class Window(QWidget):
         self.selected = False
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect)
+        self.deSelect()
     
     def deSelect(self):
         self.pushcnt=0
@@ -27,6 +28,13 @@ class Window(QWidget):
         self.pushActivity.clicked.connect(self.alert)
         self.pushRegole.clicked.connect(self.alert)
         self.comboParchi.setStyleSheet("QComboBox { background-color: #ffffff}")
+
+    def deselecter(self):
+        for btn in [self.pushFlora,self.pushFauna,self.pushActivity,self.pushRegole]:
+            try: 
+                btn.clicked.disconnect()
+            except TypeError:
+                pass
 
     def alert(self):
         msg = QMessageBox()
@@ -73,12 +81,7 @@ class Window(QWidget):
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCinqueTerre))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCinqueTerre))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCinqueTerre))
-    def deselecter(self):
-        for btn in [self.pushFlora,self.pushFauna,self.pushActivity,self.pushRegole]:
-            try: 
-                btn.clicked.disconnect()
-            except TypeError:
-                pass
+        
 
 class Landing(QWidget):
     def __init__(self):
