@@ -9,16 +9,19 @@ Un’applicazione desktop scritta in **Python** con **PyQt6**, che ti permette d
 ```plaintext
 EcoGuida2025/
 ├── src/
-│   └── text.py               # Contiene i testi dei parchi (flora, fauna, ecc.)
+│   ├── text.py               # Contiene i testi dei parchi (flora, fauna, ecc.)
+|   └── main.py               # Codice principale dell'applicazione
 ├── GUI/
 │   ├── main.ui               # Layout UI della finestra principale (Qt Designer)
-│   └── landing.ui            # Layout UI della landing page (Qt Designer)
+│   └── landing.ui            # Layout UI della landing page (Qt Designer)   
 ├── images/
 │   └── Logo_EcoGuida.png     # Icona del programma
-├── main.py                   # Codice principale dell'applicazione
+|   └── Logo_EcoGuidaNoBG     # Icona del programma (senza sfondo)
 ├── README.md                 # Documentazione del progetto
+├── app.py                    # Codice con QApplication da cui parte il programma
 └── requirements.txt          # Librerie necessarie
 ```
+>**L'applicazione parte dal file app.py** per eseguirla va quindi mandato in esecuzione quel file con i **file necessari nella stessa path**
 
 ---
 
