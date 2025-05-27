@@ -58,5 +58,5 @@ Contiene le variabili:
 ---
 
 # 🌿 Esplora i parchi e rispetta la natura!
->> Riccardo Dal Zotto e Matteo Bonaccini
+> Riccardo Dal Zotto e Matteo Bonaccini
 
