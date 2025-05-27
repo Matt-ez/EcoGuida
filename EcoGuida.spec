@@ -45,6 +45,6 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=True,  # Lascia True per vedere errori in console
+    console=False,  # Lascia True per vedere errori in console
     icon=os.path.join(base_path, 'images', 'Logo_EcoGuida.ico'),
 )
