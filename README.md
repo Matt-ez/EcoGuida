@@ -16,8 +16,11 @@ EcoGuida2025/
 │   ├── main.ui               # Layout UI della finestra principale (Qt Designer)
 │   └── landing.ui            # Layout UI della landing page (Qt Designer)   
 ├── images/
-│   └── Logo_EcoGuida.png     # Icona del programma
-|   └── Logo_EcoGuidaNoBG     # Icona del programma (senza sfondo)
+│   ├── Logo_EcoGuida.png     # Icona del programma
+|   ├── Logo_EcoGuidaNoBG     # Icona del programma (senza sfondo)
+|   ├── cilento.jpg           # Immagine Parco Cilento
+|   ├── cinqueterre.jpg       # Immagine Parco Cinque Terre
+|   └── granparadiso.jpg      # Immagine Parco Gran Paradiso
 ├── README.md                 # Documentazione del progetto
 └── app.py                    # Codice con QApplication da cui parte il programma
 ```
