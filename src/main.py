@@ -31,6 +31,8 @@ class Window(QWidget): # Classe della finestra principale
         self.pushSelect.clicked.connect(self.parcoChanger)
         self.comboParchi.currentTextChanged.connect(self.deSelect) # Ogni volta che si cambia il parco selezionato, si deseleziona quello precedente
         self.deSelect()
+        self.labelImg.setMaximumWidth(450)
+        self.labelImg.setScaledContents(True)
     
     def deSelect(self):
         """ Metodo per deselezionare il parco selezionato e collegare i bottoni alla funzione di alert """
@@ -43,6 +45,7 @@ class Window(QWidget): # Classe della finestra principale
         self.pushActivity.clicked.connect(self.alert)
         self.pushRegole.clicked.connect(self.alert)
         self.comboParchi.setStyleSheet("QComboBox { background-color: #ffffff}")
+        self.labelImg.clear()
 
     def deselecter(self):
         """ Metodo per disconnettere i bottoni dalle funzioni precedenti """
@@ -105,6 +108,8 @@ class Window(QWidget): # Classe della finestra principale
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaGranParadiso))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityGranParadiso))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleGranParadiso))
+        self.labelImg.setPixmap(QPixmap(resource_path("images/granparadiso.jpg")))
+        self.labelImg.setScaledContents(True)
     def parcoCilento(self):
         """ Metodo per collegare i bottoni ai setText del parco Nazionale del Cilento, vallo di Diano e Alburni """
         self.deselecter()
@@ -112,6 +117,8 @@ class Window(QWidget): # Classe della finestra principale
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCilento))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCilento))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCilento))
+        self.labelImg.setPixmap(QPixmap(resource_path("images/cilento.jpg")))
+        self.labelImg.setScaledContents(True) 
     def parcoCinqueTerre(self):
         """ Metodo per collegare i bottoni ai setText del parco Nazionale delle Cinque Terre """
         self.deselecter()
@@ -119,6 +126,8 @@ class Window(QWidget): # Classe della finestra principale
         self.pushFauna.clicked.connect(lambda: self.label.setText(faunaCinqueTerre))
         self.pushActivity.clicked.connect(lambda: self.label.setText(activityCinqueTerre))
         self.pushRegole.clicked.connect(lambda: self.label.setText(regoleCinqueTerre))
+        self.labelImg.setPixmap(QPixmap(resource_path("images/cinqueterre.jpg")))
+        self.labelImg.setScaledContents(True)
         
 
 class Landing(QWidget): # Classe della Landing Page
