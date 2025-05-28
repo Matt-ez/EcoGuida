@@ -9,7 +9,8 @@ base_path = os.getcwd()
 
 datas = [
     (os.path.join(base_path, 'GUI', '*.ui'), 'GUI'),      # Include tutti i .ui
-    (os.path.join(base_path, 'images', '*.png'), 'images'),  # Include le immagini
+    (os.path.join(base_path, 'images', '*.png'), 'images'),  # Include le immagini png
+    (os.path.join(base_path, 'images', '*.jpg'), 'images'),  # Include le immagini jpg
     (os.path.join(base_path, 'images', '*.ico'), 'images'),  # Include le icone
 ]
 
